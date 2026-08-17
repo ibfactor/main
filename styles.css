@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*:not(h1 *, h2 *, h3 *, h4 *, h5 *, h6 *) {
+	font-family: "Roboto", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, h6 {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 700;
+}
+
+body.dark {
+	background-color: #1a1a1a;
+}
+body {
+	background-color: #fdfdfd;
+}
+
+#logo {
+	display: inline-block;
+	user-select: none;
+	cursor: pointer;
+}
+#logo > h1 {
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: middle;
+	color: #d0d2ca;
+}
+body:not(.dark) #logo > h1 {
+	filter: invert(1);
+}
+#logo > img {
+	width: 50px;
+	vertical-align: middle;
+	margin-top: -10px;
+	transition: 1s all;
+}
+#logo:hover > img {
+	transform: rotate(360deg);
+}
+body:not(.dark) #logo > img {
+	filter: invert(1);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+}
+
+main {
+	margin-top: 85px;
+	padding: 30px;
+}
+
+#projects div {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.15);
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	padding: 30px;
+	display: inline-block;
+	border-radius: 5px;
+}
