@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *:not(h1 *, h2 *, h3 *, h4 *, h5 *, h6 *) {
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 h1, h2, h3, h4, h5, h6, h6 {
 	font-family: "Libre Baskerville", serif;
@@ -95,14 +95,30 @@ a:hover {
 #projects div {
 	background-color: rgba(255, 255, 255, 0);
 	cursor: pointer;
-	cursor: pointer;
 	padding: 30px;
 	display: inline-block;
 	border-radius: 5px;
 	border: 1px solid rgba(50, 50, 50, 0.5);
 	width: calc(33.333% - 65px);
 	transition: 0.25s all;
+	font-weight: 800;
 }
 #projects div:hover {
 	background-color: rgba(255, 255, 255, 0.01);
+}
+#projects > div > span {
+	display: block;
+	margin-top: 10px;
+	text-align: left;
+	position: relative;
+	font-weight: 400;
+}
+#projects div > span > a:nth-of-type(1) {
+	margin-right: 5px;
+}
+
+
+
+p.center {
+	text-align: center;
 }
